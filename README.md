@@ -1,0 +1,2 @@
+# miniproject1JeremyMcKowski
+INF_601_Fa2025_Mini_Project_1
