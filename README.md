@@ -45,6 +45,3 @@ Jeremy McKowski
 * [Matplotlib Documentation](https://matplotlib.org/stable/users/index.html)
 * [yFinance Documentation](https://ranaroussi.github.io/yfinance/)
 * [Jason Zeller](https://www.youtube.com/@profzeller)
-
-
-
