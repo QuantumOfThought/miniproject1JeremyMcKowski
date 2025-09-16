@@ -37,4 +37,4 @@ Jeremy McKowski
 * [Matplotlib Documentation](https://matplotlib.org/stable/users/index.html)
 * [yFinance Documentation](https://ranaroussi.github.io/yfinance/)
 * [Jason Zeller](https://www.youtube.com/@profzeller)
-* [Claude]()
+* [Claude](https://claude.ai/share/8d067276-03d9-48d6-986a-4adbd0faf1c0)
