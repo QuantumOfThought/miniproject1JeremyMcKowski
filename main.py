@@ -37,20 +37,20 @@ for stock in mystocks:
     last10 = dat.history(period='10d')
     mystockdata[stock] = []
 
-# Create a list of the Closing Prices
-for price in last10['Close']:
-    mystockdata[stock].append(price)
-mystock = np.array(mystockdata[stock])
+    # Create a list of the Closing Prices
+    for price in last10['Close']:
+        mystockdata[stock].append(price)
+    mystock = np.array(mystockdata[stock])
 
-# Create variable  to determine HIGH and LOW in 10 day time period
-hl = copy.copy(mystockdata[stock])
-hl.sort()
+    # Create variable  to determine HIGH and LOW in 10 day time period
+    hl = copy.copy(mystockdata[stock])
+    hl.sort()
 
 
-plt.plot(mystock)
-plt.title(stock)
-plt.axis((0, 10, hl[0]-10, hl[-1]+10))
-plt.xlabel('Trading Days Ago')
-plt.ylabel('Closing Price in USD')
-plt.savefig(f'charts/{stock}.png')
-plt.show()
+    plt.plot(mystock)
+    plt.title(stock)
+    plt.axis((0, 10, hl[0]-10, hl[-1]+10))
+    plt.xlabel('Trading Days Ago')
+    plt.ylabel('Closing Price in USD')
+    plt.savefig(f'charts/{stock}.png')
+    plt.show()
