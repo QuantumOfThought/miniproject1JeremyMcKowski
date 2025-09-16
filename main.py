@@ -29,7 +29,7 @@ if not charts.exists():
      Path(r'charts').mkdir()
 
 # Chosen stocks to track
-mystocks = ['RIVN', 'TSLA', 'MSFT', 'AAPL', 'NVDA']
+mystocks = ['AMD', 'GOOG', 'MSFT', 'AAPL', 'NVDA']
 mystockdata = {}
 
 for stock in mystocks:
