@@ -3,7 +3,7 @@
 ### Mini Project 1
 ### Stock Tickers
 
-i# This project will be using the packages NumPy and Matplotlib in order to create 5 graphs that output as PNG files.
+# This project will be using the packages NumPy and Matplotlib in order to create 5 graphs that output as PNG files.
 #
 # (5/5 points) Initial comments with your name, class and project at the top of your .py file.
 # (5/5 points) Proper import of packages used.
