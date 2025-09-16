@@ -18,13 +18,15 @@ Those graphs are automatically saved in the charts / folder.
 
 ### Dependencies
 
-Please install the pip requirements: ``` pip install - r requirements.txt```
+Please install the pip requirements: 
+``` 
+pip install - r requirements.txt
+```
 
 ### Executing program
 
 ```
-python
-main.py
+python main.py
 ```
 
 ## Authors
