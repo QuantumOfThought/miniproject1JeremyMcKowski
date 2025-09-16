@@ -54,3 +54,5 @@ for stock in mystocks:
     plt.ylabel('Closing Price in USD')
     plt.savefig(f'charts/{stock}.png')
     plt.show()
+
+    ##Lesson learned, indent correctly!
