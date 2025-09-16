@@ -18,17 +18,17 @@
 
 import yfinance as yf
 import pprint
-#
-#import numpy as np
-#import matplotlib.pyplot as plt
-#import copy
-#from pathlib import Path
+import numpy as np
+import matplotlib.pyplot as plt
+import copy
+from pathlib import Path
 
-# # Create charts folder if it does not exists
-# charts = Path('charts')
-# if not charts.exists():
-#     Path(r'charts').mkdir()
+# Create charts folder if it does not exists
+charts = Path('charts')
+if not charts.exists():
+     Path(r'charts').mkdir()
 
+# Chosen stocks to track
 mystocks = ['RIVN', 'TSLA', 'MSFT', 'AAPL', 'NVDA']
 mystockdata = {}
 
@@ -36,3 +36,21 @@ for stock in mystocks:
     dat = yf.Ticker(stock)
     last10 = dat.history(period='10d')
     mystockdata[stock] = []
+
+# Create a list of the Closing Prices
+for price in last10['Close']:
+    mystockdata[stock].append(price)
+mystock = np.array(mystockdata[stock])
+
+# Create variable  to determine HIGH and LOW in 10 day time period
+hl = copy.copy(mystockdata[stock])
+hl.sort()
+
+
+plt.plot(mystock)
+plt.title(stock)
+plt.axis((0, 10, hl[0]-10, hl[-1]+10))
+plt.xlabel('Trading Days Ago')
+plt.ylabel('Closing Price')
+plt.savefig(f'charts/{stock}.png')
+plt.show()
