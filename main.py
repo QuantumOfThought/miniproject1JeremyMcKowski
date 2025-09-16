@@ -18,8 +18,21 @@
 
 import yfinance as yf
 import pprint
-import numpy as np
-import matplotlib.pyplot as plt
-import copy
-from pathlib import Path
+#
+#import numpy as np
+#import matplotlib.pyplot as plt
+#import copy
+#from pathlib import Path
 
+# # Create charts folder if it does not exists
+# charts = Path('charts')
+# if not charts.exists():
+#     Path(r'charts').mkdir()
+
+mystocks = ['RIVN', 'TSLA', 'MSFT', 'AAPL', 'NVDA']
+mystockdata = {}
+
+for stock in mystocks:
+    dat = yf.Ticker(stock)
+    last10 = dat.history(period='10d')
+    mystockdata[stock] = []
