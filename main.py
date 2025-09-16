@@ -1,7 +1,7 @@
-### INF601 - Advanced Programming in Python
-### Jeremy McKowski
-### Mini Project 1
-### Stock Tickers
+# INF601 - Advanced Programming in Python
+# Jeremy McKowski
+# Mini Project 1
+
 
 # This project will be using the packages NumPy and Matplotlib in order to create 5 graphs that output as PNG files.
 #
@@ -21,3 +21,4 @@ import numpy as np
 import matplotlib.pyplot as plt
 import copy
 from pathlib import Path
+
