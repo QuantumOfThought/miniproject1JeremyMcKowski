@@ -2,12 +2,6 @@
 ### Jeremy McKowski
 ### Mini Project 1
  
-
-
-### INF601 - Advanced Programming in Python
-### Jeremy McKowski
-### Mini Project 1
- 
 # Project Title
  
 Miniproject 1 Stock Tickers
